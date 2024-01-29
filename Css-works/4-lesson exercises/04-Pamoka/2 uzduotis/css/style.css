@@ -1,0 +1,58 @@
+#container {
+  width: 796px;
+  height: 355px;
+  position: relative;
+  background: #e2e1e1;
+  margin: 100px auto;
+}
+#container > h3 {
+  width: 76px;
+  height: 22px;
+  position: absolute;
+  top: 91px;
+  left: 360px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  margin: 0;
+  color: #959393;
+}
+#container > h1 {
+  width: 476px;
+  top: 94px;
+  left: 160px;
+  position: absolute;
+  font-family: Inter;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 128px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+}
+#container > p {
+  margin: 0;
+  width: 390px;
+  height: 22px;
+  top: 261px;
+  left: 247px;
+  position: absolute;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #373636;
+}
+#container > img {
+  margin: 0;
+  width: 77.05px;
+  height: 73.76px;
+  top: 160.47px;
+  left: 591.52px;
+  position: absolute;
+}

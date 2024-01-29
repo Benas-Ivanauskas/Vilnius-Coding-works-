@@ -1,0 +1,118 @@
+#container {
+  position: relative;
+  width: 276px;
+  height: 345px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 90px auto;
+  position: relative;
+  box-shadow: 0px 2px 4px 0px #60617029;
+  box-shadow: 0px 0px 1px 0px #28293d0a;
+  background: #ffffff;
+}
+#container2 {
+  position: relative;
+  width: 276px;
+  height: 345px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 90px auto;
+  position: relative;
+  box-shadow: 8px 13px 23px 9px #3e7fe14d;
+  border: 3px solid #3e7fe1;
+}
+
+#container3 {
+  position: relative;
+  width: 276px;
+  height: 345px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 90px auto;
+  position: relative;
+}
+.text-container > img {
+  border-radius: 12px 12px 0px 0px;
+  max-width: 100%;
+}
+.test > p {
+  width: 83px;
+  height: 22px;
+  font-family: inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #959393;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+.test > h2 {
+  width: 250px;
+  height: 48px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 12px;
+}
+.buttons-container {
+  width: 100px;
+  height: 64px;
+  padding: 16px, 0px, 16px, 0px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.buttons-container > img {
+  margin-right: 10px;
+}
+.date {
+  width: 56px;
+  height: 56px;
+  top: 148px;
+  left: 204px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 4px 0px #60617029;
+  box-shadow: 0px 1px 1px 0px #28293d0a;
+  position: absolute;
+  background: #ffffff;
+  z-index: 5;
+}
+.day {
+  width: 28px;
+  height: 28px;
+  top: -12px;
+  left: 13px;
+  position: absolute;
+}
+.day2 {
+  width: 28px;
+  height: 28px;
+  top: -15px;
+  left: 20px;
+  position: absolute;
+}
+.day3 {
+  width: 28px;
+  height: 28px;
+  top: -15px;
+  left: 17px;
+  position: absolute;
+}
+.month {
+  width: 25px;
+  height: 22px;
+  top: 20px;
+  left: 15px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #121212;
+  position: absolute;
+}
