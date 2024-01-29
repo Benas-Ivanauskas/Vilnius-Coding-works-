@@ -1,0 +1,20 @@
+#feedback {
+  background-color: #080a0b;
+  max-width: 1920px;
+  height: 1200px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  margin-top: -2px;
+}
+
+.keep-in-touch-container > img {
+  width: 412.35px;
+  height: 655.6px;
+}
+@media only screen and (max-width: 500px) {
+  /* #feedback {
+    height: 834px;
+  } */
+}

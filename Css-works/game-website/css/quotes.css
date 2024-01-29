@@ -1,0 +1,244 @@
+#quotes {
+  background-image: url(../img/quotes-section-image.jpg);
+  max-width: 1920px;
+  height: 1100px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  margin-top: -2px;
+}
+.quotes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.quotes-container > div > h3 {
+  width: 261.93px;
+  height: 27.7px;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: var(--white);
+  margin: 500px 0px 0px 300px;
+}
+
+.quotes-container > div > h1 {
+  width: 410.93px;
+  height: 153.56px;
+  font-family: Bebas Neue;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: var(--white);
+  margin: 0px 0px 0px 300px;
+}
+
+.quotes-container > div > p {
+  width: 434.95px;
+  height: 136.14px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--white);
+  margin: 0px 0px 0px 300px;
+  transform: translateY(-30px);
+}
+
+.quotes-container > div > button {
+  width: 260.36px;
+  height: 60.06px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--black);
+  margin: 0px 0px 0px 300px;
+}
+
+.card-quotes-container1 {
+  display: grid;
+  width: 452.59px;
+  height: 183.13px;
+  background-color: #ffffff14;
+  border-radius: 8px;
+  margin: 200px 0px 0px 200px;
+}
+.card-quotes-container2 {
+  display: grid;
+  width: 452.59px;
+  height: 183.13px;
+  background-color: #ffffff14;
+  border-radius: 8px;
+  margin: 30px 0px 0px 70px;
+}
+.card-quotes-container3 {
+  display: grid;
+  width: 452.59px;
+  height: 183.13px;
+  background-color: #ffffff14;
+  border-radius: 8px;
+  margin: 30px 0px 0px 200px;
+}
+.profile-information {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.profile-information > img {
+  width: 65.27px;
+  height: 65.27px;
+  box-shadow: 8px 0px 00px #ffb548;
+  border-radius: 60px;
+  margin: 7px 0px 0px 10px;
+}
+
+.profile-information > div > h3 {
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  width: 261.93px;
+  height: 27.7px;
+  color: var(--orange);
+  margin-left: 30px;
+}
+.profile-information > div > p {
+  width: 384.19px;
+  height: 35.46px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: gray;
+  margin-left: 30px;
+  transform: translateY(-28px);
+}
+.review {
+  width: 357.29px;
+  height: 30.33px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--white);
+  margin-left: 15px;
+  transform: translateY(-70px);
+}
+.review2 {
+  width: 389.97px;
+  height: 60.24px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--white);
+  margin-left: 15px;
+  transform: translateY(-70px);
+}
+.date {
+  width: 230.32px;
+  height: 20.02px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: gray;
+  margin-left: 15px;
+  transform: translateY(-80px);
+}
+.date2 {
+  width: 230.32px;
+  height: 20.02px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: gray;
+  margin-left: 15px;
+  transform: translateY(-96px);
+}
+.twitter-icon {
+  transform: translate(340px, -100px);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  #quotes {
+    height: 834px;
+  }
+  .quotes-container > div > h3 {
+    width: 261.93px;
+    height: 27.67px;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 30px 0px 0px 15px;
+  }
+
+  .quotes-container > div > h1 {
+    width: 410.93px;
+    height: 153.56px;
+    font-size: 33px;
+    line-height: 33px;
+    margin: 0px 0px 0px 15px;
+  }
+
+  .quotes-container > div > p {
+    width: 289.74px;
+    height: 86.91px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px 0px 0px 15px;
+    transform: translateY(-90px);
+  }
+
+  .quotes-container > div > button {
+    width: 216.5px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0px;
+    margin: 0px 0px 0px 130px;
+    transform: translateY(-70px);
+  }
+  .quotes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card-quotes-container1 {
+    margin: 0px;
+    transform: scale(0.8);
+  }
+  .card-quotes-container2 {
+    margin: 0px;
+    transform: scale(0.8);
+  }
+  .card-quotes-container3 {
+    margin: 0px;
+    transform: scale(0.8);
+  }
+}

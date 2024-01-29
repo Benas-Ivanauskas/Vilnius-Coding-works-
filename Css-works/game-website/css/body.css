@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+}
+
+:root {
+  --white: #ffffff;
+  --orange: #ffb548;
+  --black: #000000bf;
+  --black-text: #1a1917;
+}
+
+html {
+  scroll-behavior: smooth;
+}

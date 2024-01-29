@@ -1,0 +1,140 @@
+#game-features {
+  background-image: url(../img/bg-image-game-features.png);
+  max-width: 1920px;
+  height: 1179px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+}
+
+.game-features-container {
+  margin-left: 1100.43px;
+  margin-top: 270px;
+}
+
+.game-features-container > h3 {
+  width: 262.29px;
+  height: 27.7px;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: var(--white);
+  transform: translateY(100px);
+}
+.game-features-container > h1 {
+  width: 411.5px;
+  height: 73.64px;
+  font-family: Bebas Neue;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: var(--white);
+  transform: translateY(50px);
+}
+.features-content-box {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.features-content-box > div > h3 {
+  font-family: Bebas Neue;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: var(--orange);
+}
+.features-content-box > div > p {
+  width: 362.52px;
+  height: 77.79px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: justify;
+  color: var(--white);
+}
+.second-content-list {
+  width: 366.44px;
+  height: 38.23px;
+}
+
+.progress-bar {
+  width: 20px;
+}
+.full-elipse {
+  margin-top: 43px;
+}
+.progress-bar-design {
+  height: 176px;
+  border: 1.96px;
+  margin-left: 7px;
+  transform: translateY(-10px);
+}
+.elipse1 {
+  transform: translate(0px, -15px);
+}
+.elipse2 {
+  transform: translate(0px, 42px);
+}
+
+@media only screen and (max-width: 500px) {
+  #game-features {
+    height: 560px;
+  }
+  .game-features-container {
+    margin-left: 107px;
+    margin-top: -40px;
+  }
+  .game-features-container > h3 {
+    width: 262.29px;
+    height: 27.67px;
+    font-size: 18px;
+    line-height: 18px;
+    transform: translate(6px, 80px);
+  }
+  .game-features-container > h1 {
+    width: 411.5px;
+    height: 73.64px;
+    font-size: 33px;
+    line-height: 33px;
+    transform: translate(60px, 55px);
+  }
+  .features-content-box > div > h3 {
+    width: 208.2px;
+    height: 38.23px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .features-content-box > div > p {
+    width: 179.68px;
+    height: 131.65px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .second-content-list {
+    transform: translateY(-35px);
+  }
+  .third-content-list {
+    transform: translateY(-15px);
+  }
+  .full-elipse {
+    margin-top: 24px;
+  }
+  .progress-bar-design {
+    height: 166px;
+    border: 1.96px;
+    margin-left: 7px;
+    transform: translateY(-10px);
+  }
+  .elipse2 {
+    transform: translate(0px, 44px);
+  }
+}

@@ -1,0 +1,116 @@
+#system-requirments {
+  background-image: url(../img/bg-image4.png);
+  max-width: 1920px;
+  height: 1179px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+}
+.system-requirments-container {
+  margin: 180px auto;
+  text-align: center;
+}
+.system-requirments-container > h3 {
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+.system-requirments-container > h1 {
+  font-family: Bebas Neue;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 3px;
+  color: var(--white);
+  text-align: center;
+  transform: translateY(-45px);
+}
+.system-requirment-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  width: 573.2px;
+  height: 400.69px;
+  border: 1px solid gray;
+  transform: translate(-350px, 35px);
+}
+.last-information4-box {
+  grid-column: span 2;
+}
+.system-requirment-information > div > h3 {
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: var(--orange);
+  margin-left: 15px;
+}
+.system-requirment-information > div > p {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--white);
+  margin-left: 15px;
+  transform: translateY(-10px);
+}
+.information1-box {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.information2-box {
+  border-bottom: 1px solid gray;
+}
+.information3-box {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.information4-box {
+  border-bottom: 1px solid gray;
+}
+
+@media only screen and (max-width: 500px) {
+  #system-requirments {
+    height: 629px;
+  }
+  .system-requirments-container {
+    margin-top: 50px;
+  }
+  .system-requirments-container > h3 {
+    width: 352.86px;
+    height: 27.67px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .system-requirments-container > h1 {
+    width: 300.47px;
+    height: 73.64px;
+    font-size: 33px;
+    line-height: 33px;
+    transform: translate(30px, -20px);
+  }
+  .system-requirment-information {
+    transform: translateX(100px);
+    transform: translate(28px, -50px);
+    width: 300px;
+    height: 316px;
+  }
+  .system-requirment-information > div > h3 {
+    width: 131.89px;
+    height: 13.95px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .system-requirment-information > div > p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
