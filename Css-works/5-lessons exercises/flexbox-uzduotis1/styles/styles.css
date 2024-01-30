@@ -1,0 +1,46 @@
+body {
+  background-color: orange;
+}
+
+.container1 {
+  display: flex;
+}
+.container2 {
+  display: flex;
+  margin: 0px;
+  background-color: red;
+  width: 100%;
+}
+.container2 p {
+  margin: 20px;
+  background-color: white;
+}
+.container3 {
+  display: flex;
+  width: 1400px;
+  height: 200px;
+  background-color: white;
+  align-items: flex-end;
+  margin: 20px auto;
+}
+.container3 p {
+  padding: 30px;
+}
+
+.container4 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background-color: red;
+  justify-content: space-around;
+  align-items: center;
+}
+.container4 > p {
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}

@@ -1,0 +1,102 @@
+header {
+  display: flex;
+  height: 4vh;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+header > h1 {
+  margin-left: 20px;
+}
+.header-list {
+  display: flex;
+  gap: 6px;
+}
+.header-list > li > a {
+  color: white;
+  margin-right: 20px;
+}
+
+nav {
+  height: 40vh;
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+nav > h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.btn2 {
+  width: 80px;
+  height: 40px;
+  background: transparent;
+}
+.description {
+  height: 8vh;
+  background: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 230px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.card > h2,
+a {
+  font-weight: bold;
+  padding: 10px;
+}
+.card > p {
+  padding: 10px;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  height: 20vh;
+  background-color: rgb(95, 93, 93);
+  color: white;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+footer > p {
+  width: 500px;
+}
+.footer-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer-navigation > div > h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-navigation > div > ul > li > a {
+  text-decoration: none;
+  color: aqua;
+}
