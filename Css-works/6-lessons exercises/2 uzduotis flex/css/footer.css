@@ -1,0 +1,28 @@
+footer {
+  max-width: 1437px;
+  height: 113px;
+  background: #000000;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.copy-right-logo-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.copy-right-logo-container > p {
+  height: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ffffff;
+}

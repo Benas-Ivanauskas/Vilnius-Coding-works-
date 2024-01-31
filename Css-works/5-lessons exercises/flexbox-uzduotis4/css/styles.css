@@ -1,102 +1,117 @@
-header {
-  display: flex;
-  height: 4vh;
+body {
+  margin: 0;
+}
+/* 
+--NavBar--- */
+
+.navigation {
   background-color: black;
-  color: white;
-  align-items: center;
+}
+.navigation .container {
   justify-content: space-between;
+  max-width: 1000px;
+  align-items: center;
 }
-header > h1 {
-  margin-left: 20px;
-}
-.header-list {
-  display: flex;
-  gap: 6px;
-}
-.header-list > li > a {
+.title {
+  padding: 20px 0;
   color: white;
-  margin-right: 20px;
+  font-size: 20px;
+}
+.nav-list {
+  gap: 50px;
 }
 
-nav {
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+}
+/* ----header---- */
+header {
+  background-color: aquamarine;
   height: 40vh;
-  background-color: greenyellow;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.flex-container {
   display: flex;
+}
+header .container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  height: 100%;
 }
-nav > h2 {
+.heading {
   font-size: 25px;
   font-weight: bold;
+  padding: 20px 0;
 }
 
+.button {
+  margin: 20px 0;
+}
+.btn,
+.btn1 {
+  width: 120px;
+  padding: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
 .btn {
-  width: 80px;
-  height: 40px;
-  border: none;
   background-color: black;
   color: white;
 }
-.btn2 {
-  width: 80px;
-  height: 40px;
+.btn1 {
   background: transparent;
 }
-.description {
-  height: 8vh;
-  background: skyblue;
-  display: flex;
+
+/* ----banner---- */
+.banner {
   justify-content: center;
-  align-items: center;
+  background-color: skyblue;
+}
+.banner p {
+  padding: 20px 50px;
+}
+
+/* ----Main----- */
+
+main {
+  background-color: antiquewhite;
+}
+
+main .container {
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-  width: 350px;
-  height: 230px;
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 20px 0px;
+  width: calc(30% - 30px);
+  margin: 20px 0;
+  padding: 20px 20px;
+  background-color: rgb(250, 171, 53);
 }
 
-.card > h2,
-a {
-  font-weight: bold;
-  padding: 10px;
-}
-.card > p {
-  padding: 10px;
-}
-section {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+/* ----footer---- */
 
 footer {
-  display: flex;
-  height: 20vh;
-  background-color: rgb(95, 93, 93);
-  color: white;
-  padding-top: 30px;
-  padding-left: 20px;
+  background-color: rgb(141, 141, 141);
 }
-footer > p {
-  width: 500px;
+footer .footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
-.footer-navigation {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.footer-container .contacts {
+  max-width: 300px;
 }
-.footer-navigation > div > h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.navigation-list {
+  justify-content: space-between;
+  width: 800px;
 }
-.footer-navigation > div > ul > li > a {
-  text-decoration: none;
-  color: aqua;
+.contacts {
+  padding: 20px 30px 20px 0px;
 }
