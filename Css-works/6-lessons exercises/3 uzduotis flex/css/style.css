@@ -23,23 +23,13 @@ header .container {
   line-height: 86.4px;
   width: 1121px;
   height: 172px;
+  text-align: center;
 }
 
 main .container {
   flex-wrap: wrap;
 }
-img.image1,
-.image4 {
-  width: 428.48px;
-  height: 468px;
-  border-radius: 62.9px;
-}
-img.image2,
-.image3 {
-  width: 668.28px;
-  height: 448.14px;
-  border-radius: 62.9px;
-}
+
 .card {
   flex-wrap: wrap;
   display: flex;
@@ -85,4 +75,137 @@ section {
 }
 .img {
   margin: 50px;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+  .img1,
+  .img4 {
+    width: 30%;
+  }
+  .img2,
+  .img3 {
+    width: 50%;
+  }
+  .heading {
+    font-size: 52px;
+  }
+
+  section {
+    max-width: 900px;
+    height: 700px;
+  }
+
+  .card2 h1 {
+    max-width: 800px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .card2 p {
+    max-width: 600px;
+    height: 380px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .img {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .container {
+    max-width: 900px;
+  }
+  .img1,
+  .img4 {
+    width: 30%;
+  }
+  .img2,
+  .img3 {
+    width: 50%;
+  }
+  .second-card {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    max-width: 500px;
+    height: 1000px;
+  }
+  .card2 h1 {
+    max-width: 300px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+  .card2 p {
+    max-width: 600px;
+    height: 420px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-right: 40px;
+  }
+  .img {
+    width: 55%;
+    margin: 0px auto;
+  }
+}
+@media all and (max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+  .img1,
+  .img4 {
+    width: 60%;
+  }
+  .img2,
+  .img3 {
+    width: 70%;
+  }
+  .heading {
+    font-size: 28px;
+    max-width: 600px;
+    line-height: 40px;
+    height: 50px;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  section {
+    max-width: 400px;
+    height: 900px;
+  }
+  .card2 h1 {
+    max-width: 300px;
+    font-size: 18px;
+  }
+  .card2 p {
+    max-width: 600px;
+    height: 420px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-right: 40px;
+  }
+  .img {
+    width: 55%;
+    margin-left: 100px;
+  }
+  .heading {
+    font-size: 20px;
+    max-width: 550px;
+    height: 30px;
+    padding-bottom: 80px;
+  }
 }
