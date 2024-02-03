@@ -8,6 +8,10 @@ header {
   background-position: center;
   font-family: "Montserrat", sans-serif;
 }
+.mobile {
+  display: none;
+}
+
 img.logo {
   margin-left: 50px;
 }
@@ -64,4 +68,31 @@ button {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .heading {
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 20px 30px 20px;
+  }
+  .dekstop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    cursor: pointer;
+  }
+  .bi {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 510px) {
+  .heading {
+    font-size: 25px;
+  }
 }

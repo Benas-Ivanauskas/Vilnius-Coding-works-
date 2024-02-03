@@ -26,3 +26,9 @@ footer {
   text-align: center;
   color: #ffffff;
 }
+
+@media all and (max-width: 800px) {
+  .nav-list {
+    gap: 10px;
+  }
+}

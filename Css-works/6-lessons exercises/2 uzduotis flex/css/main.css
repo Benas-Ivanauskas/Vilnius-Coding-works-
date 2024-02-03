@@ -19,12 +19,12 @@
   text-align: left;
 }
 
-.sidebar-two,
-.sidebar-three {
+.text-two,
+.text-three {
   flex: 1;
   padding: 40px;
 }
-.sidebar-one {
+.text-one {
   flex: 2;
   padding: 40px;
   max-width: 540px;
@@ -50,7 +50,7 @@
 .image {
   max-width: 100%;
   max-height: 614px;
-  min-width: 300px;
+  min-width: 500px;
 }
 
 .text-box > p {
@@ -63,4 +63,85 @@
   letter-spacing: 0em;
   text-align: left;
   min-width: 200px;
+}
+
+@media all and (max-width: 1300px) {
+  .first-layout {
+    max-width: 1300px;
+    height: 420px;
+  }
+  .text-container {
+    width: 1100px;
+    height: 300px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .image {
+    max-width: 60%;
+  }
+  .text-box > p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .first-layout {
+    max-height: 650px;
+  }
+  .text-container {
+    width: 700px;
+    font-size: 15px;
+    line-height: 15px;
+    height: 350px;
+  }
+  .second-layout {
+    height: 1200px;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+  .text-box {
+    max-width: 399px;
+    height: 530px;
+  }
+}
+@media all and (max-width: 800px) {
+  .first-layout {
+    height: 700px;
+  }
+  .text-container {
+    flex-wrap: wrap;
+    width: 600px;
+    height: 500px;
+    flex-direction: column;
+  }
+  .text-one {
+    height: 100px;
+  }
+  .second-layout {
+    height: 1000px;
+  }
+  .text-box {
+    height: 480px;
+  }
+  .text-box > p {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 590px) {
+  .first-layout {
+    height: 700px;
+  }
+  .text-container {
+    height: 480px;
+    font-size: 12px;
+    width: 500px;
+  }
+  .text-one {
+    height: 100px;
+  }
+  .image {
+    min-width: 400px;
+  }
 }
