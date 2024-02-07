@@ -1,115 +1,136 @@
 #system-requirments {
-  background-image: url(../img/bg-image4.png);
+  background-image: url(../img/bg-image-4.png);
   max-width: 1920px;
-  height: 1179px;
+  height: 1265px;
   background-size: cover;
   object-fit: cover;
   background-position: center;
-  display: flex;
 }
-.system-requirments-container {
-  margin: 180px auto;
-  text-align: center;
-}
-.system-requirments-container > h3 {
-  font-family: Bebas Neue;
+#system-requirments .system-requirments-title h2 {
+  height: 27.7px;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 2px;
-  color: var(--white);
+  color: #ffffff;
+  margin-top: 250px;
 }
-.system-requirments-container > h1 {
-  font-family: Bebas Neue;
+
+#system-requirments .system-requirments-title h1 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 80px;
   font-weight: 700;
   line-height: 80px;
   letter-spacing: 3px;
-  color: var(--white);
-  text-align: center;
-  transform: translateY(-45px);
+  color: #ffffff;
+  margin-bottom: 240px;
 }
-.system-requirment-information {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: white;
-  width: 573.2px;
-  height: 400.69px;
+#system-requirments .table-container {
+  max-width: 573.2px;
+  height: 340px;
   border: 1px solid gray;
-  transform: translate(-350px, 35px);
+  margin-left: 290px;
 }
-.last-information4-box {
-  grid-column: span 2;
+#system-requirments .table-container .table1 {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
 }
-.system-requirment-information > div > h3 {
-  font-family: Bebas Neue;
+#system-requirments .table-container .table2 {
+  border-bottom: 1px solid gray;
+}
+#system-requirments .table-container .table3 {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+#system-requirments .table-container .table4 {
+  border-bottom: 1px solid gray;
+}
+#system-requirments .table-container .bendras h3 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 2px;
   text-align: left;
-  color: var(--orange);
-  margin-left: 15px;
+  color: #ffb548;
+  padding-top: 15px;
 }
-.system-requirment-information > div > p {
-  font-family: Open Sans;
+#system-requirments .table-container .bendras p {
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
   text-align: left;
-  color: var(--white);
-  margin-left: 15px;
-  transform: translateY(-10px);
-}
-.information1-box {
-  border-bottom: 1px solid gray;
-  border-right: 1px solid gray;
-}
-.information2-box {
-  border-bottom: 1px solid gray;
-}
-.information3-box {
-  border-bottom: 1px solid gray;
-  border-right: 1px solid gray;
-}
-.information4-box {
-  border-bottom: 1px solid gray;
+  color: #ffffff;
 }
 
-@media only screen and (max-width: 500px) {
-  #system-requirments {
-    height: 629px;
+@media all and (max-width: 1150px) {
+  #system-requirments .table-container {
+    margin-left: 150px;
   }
-  .system-requirments-container {
-    margin-top: 50px;
+}
+
+@media all and (max-width: 870px) {
+  #system-requirments .table-container {
+    margin-left: 100px;
   }
-  .system-requirments-container > h3 {
-    width: 352.86px;
-    height: 27.67px;
+}
+@media all and (max-width: 750px) {
+  #system-requirments .table-container {
+    margin-left: 30px;
+  }
+}
+@media all and (max-width: 610px) {
+  #system-requirments .table-container {
+    margin-left: 15px;
+    transform: scale(0.9);
+  }
+}
+@media all and (max-width: 480px) {
+  #system-requirments .table-container {
+    margin-left: 5px;
+  }
+  #system-requirments .system-requirments-title h2 {
     font-size: 18px;
     line-height: 18px;
+    margin-top: 60px;
   }
-  .system-requirments-container > h1 {
-    width: 300.47px;
-    height: 73.64px;
+
+  #system-requirments .system-requirments-title h1 {
     font-size: 33px;
     line-height: 33px;
-    transform: translate(30px, -20px);
+    margin-bottom: 60px;
   }
-  .system-requirment-information {
-    transform: translateX(100px);
-    transform: translate(28px, -50px);
-    width: 300px;
-    height: 316px;
+  #system-requirments {
+    height: 700px;
   }
-  .system-requirment-information > div > h3 {
-    width: 131.89px;
-    height: 13.95px;
+}
+
+@media all and (max-width: 375px) {
+  #system-requirments .table-container {
+    transform: scale(0.9);
+  }
+  #system-requirments {
+    height: 719px;
+  }
+  #system-requirments .system-requirments-title h2 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 60px;
+  }
+
+  #system-requirments .system-requirments-title h1 {
+    font-size: 33px;
+    line-height: 33px;
+    margin-bottom: 60px;
+  }
+  #system-requirments .table-container .bendras h3 {
     font-size: 18px;
     line-height: 18px;
   }
-  .system-requirment-information > div > p {
+  #system-requirments .table-container .bendras p {
     font-size: 14px;
     line-height: 16px;
   }

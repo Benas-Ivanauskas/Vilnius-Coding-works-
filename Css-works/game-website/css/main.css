@@ -1,99 +1,63 @@
-#main {
-  background-image: url(../img/main.jpg);
-  background-size: cover;
-  max-width: 1920px;
-  height: 1278.85px;
-  object-fit: cover;
-  background-position: center;
-  text-align: center;
+.main-title {
+  margin-top: 320px;
 }
-.main__title {
-  margin-top: 390px;
-}
-.main__title > h1 {
-  font-family: Bebas Neue;
+.main-title .main-information h1 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 80px;
   letter-spacing: 3px;
-  color: var(--white);
+  color: #ffffff;
 }
-.main__title > h3 {
-  font-family: Bebas Neue;
+.main-title .main-information h2 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 2px;
-  color: var(--white);
-  transform: translateY(-60px);
+  color: #ffffff;
 }
-.buy__btn {
-  background-color: var(--orange);
+.button {
   width: 260.36px;
   height: 60.06px;
   border-radius: 5px;
   border: none;
-  color: var(--black-text);
-  font-family: Open Sans;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0px;
-  cursor: pointer;
-  margin-right: 30px;
+  text-align: center;
 }
-.main__title > p {
-  font-family: Open Sans;
+.main-title .main-information h3 {
+  margin-top: 500px;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0.1em;
-  color: var(--white);
-  transform: translateY(450px);
+  text-align: center;
+  color: #ffffff;
 }
-.main__title > img {
-  transform: translateY(440px);
-  cursor: pointer;
-  width: 20.25px;
-  height: 8.17px;
+.main-title .main-information img {
+  padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 500px) {
-  #main {
-    height: 623px;
+@media all and (max-width: 770px) {
+  .main-title .main-information h1 {
+    font-size: 54px;
+    line-height: 54px;
   }
-  .main__title {
-    margin-top: 180px;
-  }
-  .main__title > h1 {
+}
+
+@media all and (max-width: 400px) {
+  .main-title .main-information h1 {
     font-size: 33px;
     line-height: 33px;
-    width: 355.64px;
-    height: 31.06px;
-    transform: translatex(50px);
   }
-  .main__title > h3 {
-    width: 247.24px;
-    height: 40.2px;
+  .main-title .main-information h2 {
     font-size: 18px;
     line-height: 18px;
-    transform: translate(105px, -15px);
-  }
-  .buy__btn {
-    width: 216.5px;
-    height: 44px;
-    font-size: 14px;
-    line-height: 19px;
-    transform: translate(-12px, -20px);
-    margin-right: 0px;
-  }
-  .main__title > p {
-    font-size: 12px;
-    transform: translateY(110px);
-  }
-  .main__title > img {
-    transform: translateY(100px);
-    width: 20.25px;
-    height: 8.17px;
   }
 }

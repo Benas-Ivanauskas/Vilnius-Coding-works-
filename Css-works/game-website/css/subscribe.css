@@ -1,0 +1,222 @@
+#subscribe {
+  background-color: #080a0b;
+  max-width: 1920px;
+  height: 1100px;
+  margin-top: -1px;
+  position: relative;
+}
+
+/* .form-container {
+  width: 366.92px;
+  height: 60px;
+  border-radius: 5px;
+  margin-left: 15px;
+  background: #ffffff14;
+} */
+#subscribe .subscribe-title h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 400px;
+}
+#subscribe .subscribe-title h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-align: left;
+  width: 677.24px;
+  height: 76.28px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+#subscribe .subscribe-title p {
+  width: 644.96px;
+  height: 136.71px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+#subscribe form {
+  width: 366.92px;
+  height: 60px;
+  background: #ffffff14;
+  border-radius: 5px;
+}
+#subscribe form h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: gray;
+  padding: 5px 0px 0px 10px;
+}
+#subscribe form input {
+  background: transparent;
+  border: none;
+  color: #ffb548;
+  padding: 0px 0px 0px 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 240px;
+}
+#subscribe button {
+  margin: 0;
+}
+.skull {
+  margin-top: 200px;
+  max-width: 412px;
+  height: 656px;
+}
+
+#subscribe .subscribe-title .subscribe-form h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: gray;
+  padding: 5px 0px 0px 10px;
+}
+
+@media all and (max-width: 1200px) {
+  .skull {
+    transform: translateX(-100px);
+  }
+  .subscribe-title {
+    position: relative;
+    z-index: 100;
+    transform: translateX(-100px);
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .skull {
+    transform: translateX(-200px);
+  }
+  .subscribe-title {
+    transform: translateX(-140px);
+  }
+  #subscribe .subscribe-title h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 400px;
+  }
+  #subscribe .subscribe-title h1 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+  #subscribe .subscribe-title p {
+    width: 450.96px;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 765px) {
+  .btn2 {
+    width: 365px;
+    transform: translateY(30px);
+  }
+}
+
+@media all and (max-width: 760px) {
+  .skull {
+    transform: translateX(-230px);
+  }
+  #subscribe {
+    height: 900px;
+  }
+  #subscribe .subscribe-title h2 {
+    margin-top: 200px;
+  }
+  .skull {
+    margin-top: 100px;
+    max-width: 412px;
+    height: 656px;
+  }
+  .btn2 {
+    width: 365px;
+    transform: translateY(30px);
+  }
+}
+
+@media all and (max-width: 590px) {
+  .subscribe-title {
+    transform: translateX(-0px);
+  }
+  #subscribe .subscribe-title h1 {
+    width: 290px;
+  }
+  #subscribe .subscribe-title p {
+    width: 300px;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 530px) {
+  #subscribe form {
+    transform: translate(-80px, 100px);
+  }
+  .btn2 {
+    transform: translate(-80px, 120px);
+  }
+  #subscribe .subscribe-title p {
+    width: 190px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .skull {
+    margin-top: 0px;
+  }
+  .subscribe-title {
+    transform: translateX(30px);
+  }
+}
+
+@media all and (max-width: 450px) {
+  #subscribe form {
+    transform: translate(-120px, 100px);
+  }
+  .btn2 {
+    transform: translate(-120px, 120px);
+  }
+}
+@media all and (max-width: 375px) {
+  #subscribe form {
+    width: 330px;
+  }
+  .btn2 {
+    width: 330px;
+  }
+  #subscribe .subscribe-title h2 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  #subscribe .subscribe-title h1 {
+    font-size: 33px;
+    line-height: 33px;
+  }
+  #subscribe .subscribe-title p {
+    font-size: 14px;
+  }
+  #subscribe {
+    height: 783px;
+  }
+}
