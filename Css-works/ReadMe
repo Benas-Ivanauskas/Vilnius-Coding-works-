@@ -1,4 +1,6 @@
-Here you can find all the projects and homework tasks I completed during my time at Vilnius Coding School. I utilized CSS and the CSS Bootstrap framework for these assignments. Please ensure you have the correct version of Bootstrap installed for optimal viewing.
+Some exercises are created using vanilla CSS and the Bootstrap CSS framework, so please ensure that you are using the correct Bootstrap version.
+
+The game website served as the primary exercise for completing the CSS course.
 
 Make sure you are using these Bootsrap versions:
      <link
