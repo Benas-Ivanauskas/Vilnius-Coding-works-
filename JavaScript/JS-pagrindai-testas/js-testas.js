@@ -42,11 +42,11 @@ let svoris = 80;
 let ugis = 1.8;
 let bmi = svoris / ugis ** 2;
 if (bmi > 25) {
-  console.log("virssvoris");
+  console.log(`${bmi.toFixed(2)} indeksas virssvoris`);
 } else if (18.25 <= bmi && bmi < 25) {
-  console.log("normalus");
+  console.log(`${bmi.toFixed(2)} indeksas normalus`);
 } else {
-  console.log("Per mazas");
+  console.log(`${bmi.toFixed(2)} indeksas per mazas`);
 }
 
 //2 variantas su funkcija
@@ -74,13 +74,13 @@ let hour = 60;
 let min = 60;
 
 let zmogausAmziusSekundemis = amzius * year * day * hour * min;
-console.log(zmogausAmziusSekundemis);
+console.log(`Zmogaus amzius sekundemis - ${zmogausAmziusSekundemis} sec`);
 let zmogausAmziusMinutemis = amzius * year * day * hour;
-console.log(zmogausAmziusMinutemis);
+console.log(`Zmogaus amzius minutemis - ${zmogausAmziusMinutemis} min`);
 let zmogausAmziusValandomis = amzius * year * day;
-console.log(zmogausAmziusValandomis);
+console.log(`Zmogaus amzius valandomis - ${zmogausAmziusValandomis} val`);
 let zmogausAmziusDienomis = amzius * year;
-console.log(zmogausAmziusDienomis);
+console.log(`Zmogaus amzius dienomis - ${zmogausAmziusDienomis} d.`);
 
 /*
 5. Parašykite programą, kuri konvertuos termometro
@@ -90,9 +90,11 @@ duomenis iš Farenheito į Celsijų, ir atvirkščiai.
 let temp = 27;
 let farenheit = 80.6;
 let tempToFarenheit = temp * (9 / 5) + 32;
-console.log(tempToFarenheit);
+console.log(`${temp}℃ verciame i farneiheitus ${tempToFarenheit}F`);
 let farenheitToTemp = ((farenheit - 32) * (5 / 9)).toFixed(2);
-console.log(farenheitToTemp);
+console.log(
+  `Farenheitus ${farenheit}F vercia i temperatura ${farenheitToTemp}℃`
+);
 
 //2 variantas
 function temperatureToFarenheit(temp) {
@@ -180,7 +182,6 @@ let passowrd = [
 ];
 
 let leftSymbols = maxLength - passowrd.length;
-console.log(leftSymbols);
 
 let sumLowerLetters = "";
 for (let i = 1; i <= leftSymbols; i++) {
@@ -190,4 +191,4 @@ for (let i = 1; i <= leftSymbols; i++) {
 }
 
 let finishedPassowrd = passowrd.join("") + sumLowerLetters;
-console.log(finishedPassowrd);
+console.log(`Galutinis sugeneruotas password: ${finishedPassowrd}`);
