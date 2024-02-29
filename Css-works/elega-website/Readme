@@ -16,7 +16,7 @@ npm install gulp gulp-sass sass bootstrap@5.3.3
 This command installs Gulp, Gulp-Sass, Sass, and Bootstrap 5.3.3, along with their dependencies, enabling you to build and run the website successfully.
 2.Compile SCSS:
 With the required modules installed, compile the SCSS files into CSS using Gulp. This step ensures that your stylesheets are up-to-date and ready for use:
-gulp sass
+run code in terminal gulp
 3.Launch Elega-website:
 Once the SCSS has been compiled, you're ready to launch Elega-website. Open the HTML files in your preferred web browser to explore the website and enjoy its sleek design and responsive layout.
 
