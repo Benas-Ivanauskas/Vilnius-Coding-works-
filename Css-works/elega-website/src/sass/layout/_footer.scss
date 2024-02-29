@@ -1,0 +1,36 @@
+@use "_breakpoints";
+
+footer {
+  width: 100Į;
+  height: auto;
+  background-color: $background-black-color;
+}
+.line {
+  max-width: 1420px;
+  top: 100px;
+  border: 1px solid $dark-grey-text-color;
+}
+
+.footer-navigation {
+  @include breakpoints.md {
+    margin-left: 50px;
+  }
+  h2 {
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: $base-font-size * 1.7;
+    line-height: 32px;
+    color: $white-color;
+  }
+  ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    a {
+      font-family: $base-font-family;
+      font-weight: 700;
+      font-size: $base-font-size * 1.2;
+      text-decoration: none;
+      color: $dark-grey-text-color;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use "_breakpoints";
+
+@mixin text-style() {
+  font-family: $base-font-family;
+  color: $white-color;
+}
+.navbar {
+  background-color: $background-black-color;
+  height: 104px;
+  width: 100%;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.text-style {
+  color: $white-color;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  @include text-style();
+  font-size: $base-font-size * 1.25;
+  @include breakpoints.xl {
+    font-size: $base-font-size;
+  }
+}
+
+.hearth {
+  width: 32px;
+  color: $white-color;
+}
+.cart-information {
+  position: relative;
+  .cart {
+    width: 32px;
+    color: $white-color;
+  }
+  .cart-quantity {
+    position: absolute;
+    top: 0%;
+    right: -3px;
+    background-color: red;
+    border-radius: 10px;
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    text-align: center;
+    color: $white-color;
+  }
+}
+
+.profile-image {
+  border: 1px solid $grey-border-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px;
+}
+.profile-information {
+  & h3 {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: 16px;
+    font-weight: 500;
+    color: $white-color;
+  }
+  & h4 {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -2.5%;
+    cursor: pointer;
+    color: $dark-grey-text-color;
+  }
+}

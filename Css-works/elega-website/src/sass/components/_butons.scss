@@ -1,0 +1,25 @@
+.button {
+  background-color: $white-color;
+  border: none;
+  border-radius: 33px;
+  padding: 8px 32px 8px 32px;
+  box-shadow: 2px 2px 0px 0px $button-primary-background inset;
+  color: $background-black-color;
+  font-family: $base-font-family;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.button2 {
+  width: 132px;
+  height: 36px;
+  padding: 8px 48px 8px 48px;
+  background-color: $button2-secondary-background;
+  color: $white-color;
+  font-family: $base-font-family;
+  font-weight: 700;
+  font-size: $base-font-size * 0.625;
+  line-height: 21px;
+  border-radius: 32px;
+  border: none;
+}

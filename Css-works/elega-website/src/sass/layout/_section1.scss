@@ -1,0 +1,115 @@
+@use "_breakpoints";
+
+@mixin text-style() {
+  font-family: $base-font-family;
+  font-weight: 700;
+}
+
+@mixin input-styles {
+  .input-search {
+    @include breakpoints.lg {
+      min-width: 500px;
+    }
+    @include breakpoints.md {
+      min-width: 400px;
+    }
+    @include breakpoints.sm {
+      min-width: 350px;
+    }
+
+    min-width: 585px;
+    height: 62px;
+    border-radius: 100px;
+    border: none;
+    background-color: $input-background;
+    padding-left: 30px;
+
+    &::placeholder {
+      font-family: $base-font-family;
+      font-weight: 400;
+      font-size: $base-font-size * 1.25;
+      color: $white-color;
+      @include breakpoints.sm {
+        font-size: $base-font-size;
+      }
+    }
+  }
+}
+#section1 {
+  width: 100%;
+  height: 88.9vh;
+  background-color: $background-black-color;
+  @include breakpoints.xl {
+    height: auto;
+  }
+  @include breakpoints.sm {
+    height: auto;
+  }
+}
+.home-page-container {
+  & h2 {
+    @include text-style();
+    font-size: $base-font-size * 2;
+    line-height: 36px;
+    color: $dark-grey-text-color;
+    margin-top: 150px;
+    @include breakpoints.xl {
+      margin-top: 30px;
+    }
+    @include breakpoints.sm {
+      font-size: $base-font-size * 1.5;
+      line-height: 24px;
+    }
+  }
+  & h1 {
+    @include text-style();
+    font-size: $base-font-size * 4;
+    line-height: 72px;
+    letter-spacing: -2.5%;
+    max-width: 352px;
+    color: $white-color;
+    @include breakpoints.sm {
+      font-size: $base-font-size * 2.5;
+      line-height: 40px;
+    }
+  }
+  & p {
+    font-family: $base-font-family;
+    font-size: $base-font-size * 1.5;
+    line-height: 36px;
+    font-weight: 500;
+    color: $dark-grey-text-color;
+    letter-spacing: -2.5%;
+    max-width: 676px;
+    min-width: 346px;
+    @include breakpoints.sm {
+      font-size: $base-font-size * 1.25;
+      line-height: 20px;
+    }
+  }
+}
+
+.input {
+  @include input-styles;
+  .button {
+    transform: translateX(-140px);
+    width: 140px;
+    height: 50px;
+  }
+}
+
+.search-icon {
+  width: 16px;
+}
+
+.home-page-image {
+  height: 700px;
+  object-fit: contain;
+  @include breakpoints.md {
+    width: 400px;
+  }
+  @include breakpoints.sm {
+    max-width: 250px;
+    transform: translateY(-140px);
+  }
+}

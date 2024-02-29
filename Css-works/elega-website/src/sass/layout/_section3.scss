@@ -1,0 +1,47 @@
+@mixin color-box {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #5f5f5f;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@mixin base-text-styles {
+  font-family: $base-font-family;
+  font-weight: 700;
+}
+
+#section3 {
+  width: 100%;
+  height: auto;
+  background-color: $background-black-color;
+}
+
+.casual-style-information {
+  padding-top: 300px;
+  h2 {
+    @include base-text-styles;
+    font-size: $base-font-size * 4;
+    line-height: 64px;
+    color: $white-color;
+  }
+  h3 {
+    @include base-text-styles;
+    font-size: $base-font-size * 2.5;
+    line-height: 40px;
+    color: $dark-grey-text-color;
+  }
+  p {
+    @include base-text-styles;
+    font-size: $base-font-size * 1.125;
+    line-height: 24px;
+    color: $dark-grey-text-color;
+    max-width: 870px;
+    min-width: 343px;
+  }
+  .design-line {
+    border: 2px solid #5f5f5f;
+    width: 94px;
+    margin-right: 20px;
+  }
+}
