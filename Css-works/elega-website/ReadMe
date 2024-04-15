@@ -1,0 +1,24 @@
+Elega-website: A modern site with intuitive design, powered by SCSS, Gulp, Sass, and Bootstrap 5.3.3 for seamless browsing.
+
+TECHNOLOGIES USED:
+
+1. SCSS (Sass): Elega-website leverages the power of SCSS (Sass) to streamline the CSS development process. SCSS allows for the use of variables, mixins, and nested styles, making CSS code more organized and maintainable.
+
+2. Gulp: Gulp is employed as a task runner to automate various development tasks, such as compiling SCSS files into CSS, minifying and concatenating JavaScript files, and optimizing images. This automation ensures efficiency and consistency throughout the development process.
+
+3. Bootstrap 5.3.3: Elega-website utilizes Bootstrap, the world's most popular front-end framework, to create responsive, mobile-first web pages. With Bootstrap's extensive library of pre-designed components and utilities, Elega-website achieves a polished and professional look while ensuring compatibility across devices and screen sizes.
+
+INSTALLATION:
+To get started with Elega-website and experience its full functionality, follow these steps:
+1.Install Node Modules:
+Before running the website, install the necessary Node.js modules by executing the following command in your terminal or command prompt:
+npm install gulp gulp-sass sass bootstrap@5.3.3
+This command installs Gulp, Gulp-Sass, Sass, and Bootstrap 5.3.3, along with their dependencies, enabling you to build and run the website successfully.
+2.Compile SCSS:
+With the required modules installed, compile the SCSS files into CSS using Gulp. This step ensures that your stylesheets are up-to-date and ready for use:
+run code in terminal gulp
+3.Launch Elega-website:
+Once the SCSS has been compiled, you're ready to launch Elega-website. Open the HTML files in your preferred web browser to explore the website and enjoy its sleek design and responsive layout.
+
+
+Experience the elegance and sophistication of Elega-website, where SCSS, Gulp, Sass, and Bootstrap converge to create a visually stunning and user-friendly web experience.
