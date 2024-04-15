@@ -1,0 +1,108 @@
+<%- include('./partials/head') %> <%- include('./partials/nav') %>
+
+<h2><%= blog.autorius %> - Blog</h2>
+<div class="detail-blog">
+  <div class="profile">
+    <img
+      class="detail-profile-img"
+      src="<%= blog.image %>"
+      alt="<%= blog.title %>"
+    />
+    <h3><%= blog.autorius %></h3>
+    <div class="followers">
+      <div>
+        <span>240</span>
+        <p>Followers</p>
+      </div>
+      <div>
+        <span>14</span>
+        <p>Following</p>
+      </div>
+    </div>
+  </div>
+  <div class="blog-description">
+    <h3 class="title"><%= blog.title %></h3>
+    <p class="text"><%= blog.text %></p>
+  </div>
+  <div class="del-edit-btn">
+    <a data-doc="<%= blog._id %>">
+      <button class="edit-btn">Edit Blog</button>
+      <button class="save-btn" style="display: none">Save</button>
+      <button class="cancel-btn" style="display: none">Cancel</button>
+      <button class="delete-blog">Delete Blog</button>
+    </a>
+  </div>
+</div>
+
+<script>
+  //DELETE
+  const deleteBtn = document.querySelector(".delete-blog");
+  deleteBtn.addEventListener("click", (e) => {
+    const id = e.target.parentNode.dataset.doc;
+    const endpoint = `/blogs/details/${id}`;
+    fetch(endpoint, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then((data) => (window.location.href = data.redirect))
+      .catch((err) => console.log(err));
+  });
+
+  //PUT
+  const editBtn = document.querySelector(".edit-btn");
+  const saveBtn = document.querySelector(".save-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+
+  editBtn.addEventListener("click", () => {
+    const titleElement = document.querySelector(".title");
+    const textElement = document.querySelector(".text");
+
+    titleElement.innerHTML = `<input type="text" id="title" value="${titleElement.textContent}">`;
+    textElement.innerHTML = `<textarea id="text" cols="50" rows="10">${textElement.textContent}</textarea>`;
+
+    saveBtn.style.display = "inline-block";
+    cancelBtn.style.display = "inline-block";
+    editBtn.style.display = "none";
+
+    //CANCEL BTN
+    cancelBtn.addEventListener("click", () => {
+      location.reload();
+    });
+  });
+
+  //SAVE BTN
+  saveBtn.addEventListener("click", () => {
+    const titleInput = document.getElementById("title").value;
+    const textInput = document.getElementById("text").value;
+
+    const id = "<%= blog._id %>";
+    const endpoint = `/blogs/details/${id}`;
+
+    const data = {
+      title: titleInput,
+      text: textInput,
+    };
+
+    fetch(endpoint, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.error("Fetch failure:", error);
+      });
+  });
+</script>
+
+<%- include('./partials/footer') %>

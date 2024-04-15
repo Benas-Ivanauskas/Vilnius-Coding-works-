@@ -1,0 +1,24 @@
+<%- include('./partials/head') %> <%- include('./partials/nav') %>
+
+<div class="create">
+  <h2>Unleash Your Creativity: Craft Your Blog</h2>
+  <form class="create-form" action="/create" method="POST">
+    <label for="autorius">Type author:</label>
+    <input type="text" name="autorius" required placeholder="Author name" />
+    <label for="title">Blog title:</label>
+    <input type="text" name="title" required placeholder="Blog title" />
+    <label for="text">Blog description:</label>
+    <textarea name="text" required placeholder="Type your blog"></textarea>
+    <label for="image">Profile Image URL:</label>
+    <input
+      type="text"
+      name="image"
+      required
+      placeholder="https://example.com/image.jpg"
+    />
+
+    <button class="create-form--btn" type="submit">Submit Blog</button>
+  </form>
+</div>
+
+<%- include('./partials/footer') %>

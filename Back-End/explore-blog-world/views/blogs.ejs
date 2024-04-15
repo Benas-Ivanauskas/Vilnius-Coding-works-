@@ -1,0 +1,24 @@
+<%- include('./partials/head') %> <%- include('./partials/nav') %>
+
+<h2>People created Blogs</h2>
+
+<div class="blogs">
+  <% if(blogs.length>0) { blogs.forEach(blog=> { %>
+  <div class="blog">
+    <h4 class="'title"><%= blog.title%></h4>
+    <div class="profile-information">
+      <img class="profile-img" src="<%= blog.image%>" alt="<%= blog.title %>" />
+      <p><%= blog.autorius %></p>
+    </div>
+    <p class="santrauka"><%= blog.text%></p>
+
+    <a href="/blogs/details/<%= blog._id %>"
+      ><button class="read-more--btn">Read More</button></a
+    >
+  </div>
+  <% }) } else {%>
+  <p>Siuo metu pamoku nera</p>
+  <% } %>
+</div>
+
+<%- include('./partials/footer') %>

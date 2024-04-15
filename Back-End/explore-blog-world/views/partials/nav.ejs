@@ -1,0 +1,17 @@
+<nav>
+  <ul>
+    <li><a href="/home-page">Home Page</a></li>
+    <li><a href="/create">Create Blog</a></li>
+    <li><a href="/blogs">Blogs</a></li>
+  </ul>
+  <div>
+    <ul>
+      <% if (user) { %>
+      <li><strong>Welcome, <%= user.email %> </strong></li>
+      <li>
+        <button class="logout-btn"><a href="/logout">Log out</a></button>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+</nav>
