@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.set("view engine", "ejs");
 
-const dbURI = process.env.JAVASCRIPT_API_KEY;
+const dbURI = process.env.API_KEY;
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
