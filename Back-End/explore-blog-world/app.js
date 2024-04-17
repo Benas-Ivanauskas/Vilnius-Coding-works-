@@ -16,11 +16,6 @@ app.use(express.json());
 
 app.set("view engine", "ejs");
 
-mongoose
-  .connect(process.env.URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(3000))
-  .catch((err) => console.log(err));
-
 //routes
 app.get("*", checkUser);
 app.get("/", (req, res) => res.render("login-page"));
@@ -32,3 +27,8 @@ app.use(apiRouController);
 app.use((req, res) => {
   res.status(404).render("404");
 });
+
+mongoose
+  .connect(process.env.URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((result) => app.listen(3000))
+  .catch((err) => console.log(err));
