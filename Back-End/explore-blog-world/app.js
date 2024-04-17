@@ -1,10 +1,10 @@
+import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import apiRouController from "./routes/apiRouController.js";
 import cookieParser from "cookie-parser";
 import { requireAuth, checkUser } from "./middleware/authMiddleware.js";
 import apiRoutes from "./routes/apiRoutes.js";
-import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
@@ -28,7 +28,12 @@ app.use((req, res) => {
   res.status(404).render("404");
 });
 
+const URL = process.env.URI;
+
 mongoose
-  .connect(process.env.URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(3000))
+  .connect(URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((result) => app.listen(process.env.PORT))
   .catch((err) => console.log(err));
